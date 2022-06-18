@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  justify-content: center;
+  align-content: center;
+margin: 50px auto;
+}
+.media {
+  display: flex;
+  width: 30% auto; 
+  margin: auto;
+  padding: auto;
+   box-sizing: border-box;
+  background-image: url('bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weights: 400,500,600,700;
+}
+
+.text {
+  margin: 200px 50px;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+
+.action {
+  text-align: center;
+
+  margin: 30px 100px;
+  width: 100%;
+}
+
+.trial {
+  padding: 7px;
+  background-color: hsl(248, 32%, 49%);
+    margin: 20px;
+  color: hsl(246, 25%, 77%);
+}
+
+.form {
+  margin: 20px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+input {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  
+}
+
+
+input[type=submit] {
+  background-color: hsl(148, 100%,20%);
+}
+
+#rule {
+  font-size: 10px;
+}
+
+@media screen and (max-width:1440px) and (min-width:376px) {
+  .media {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .media {
+    background-image: url('bg-intro-mobile.png');
+     flex-direction: column;
+    width:375px;
+}
+}
